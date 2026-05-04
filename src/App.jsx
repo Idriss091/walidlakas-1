@@ -1,6 +1,7 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import LiquidEther from '@/components/LiquidEther';
 
 // Page Components Placeholder
 const PageTemplate = ({ title, icon: Icon }) => (
@@ -22,9 +23,12 @@ const PageTemplate = ({ title, icon: Icon }) => (
 const Home = () => {
   return (
   <>
-    <section className="hero">
-      <div className="container hero-grid">
-        <div className="hero-content">
+    <section className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, opacity: 0.6 }}>
+        <LiquidEther />
+      </div>
+      <div className="container hero-grid" style={{ position: 'relative', zIndex: 1, pointerEvents: 'none' }}>
+        <div className="hero-content" style={{ pointerEvents: 'auto' }}>
           <h1>Walid <span className="gradient-text">LAKAS</span></h1>
           <h2 className="hero-subtitle">Research Engineer in Fluid Mechanics & Energy</h2>
           <p className="hero-description">
@@ -39,7 +43,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="hero-visual">
+        <div className="hero-visual" style={{ pointerEvents: 'auto' }}>
           <div className="profile-image-container">
             <img 
               src="/profile.jpg" 
