@@ -1,7 +1,15 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap, Linkedin } from 'lucide-react';
+import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import LiquidEther from '@/components/LiquidEther';
+
+const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+  </svg>
+);
 
 // Page Components Placeholder
 const PageTemplate = ({ title, icon: Icon }) => (
@@ -39,7 +47,7 @@ const Home = () => {
               <Mail size={20} /> Get in touch
             </a>
             <a href="https://www.linkedin.com/in/walid-l-11b09325a/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              <Linkedin size={20} /> LinkedIn
+              <LinkedinIcon size={20} /> LinkedIn
             </a>
             <Link to="/blog" className="btn btn-secondary">
               Read my blog
@@ -61,10 +69,49 @@ const Home = () => {
     <section className="section" style={{ background: 'rgba(14, 165, 233, 0.02)' }}>
       <div className="container">
         <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <span className="gradient-text">Academic</span> Background
+          <span className="gradient-text">My</span> Journey
         </h2>
         <div className="timeline">
           <div className="timeline-item left">
+            <div className="glass-card timeline-content">
+              <div className="timeline-date">2025</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+                <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="/pepro.png" alt="Pepro" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                </div>
+                <h3 style={{ margin: 0 }}>Founder & Researcher</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)' }}>Pepro</p>
+              <p style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>Research and scientific software publishing.</p>
+            </div>
+          </div>
+          <div className="timeline-item right">
+            <div className="glass-card timeline-content">
+              <div className="timeline-date">2025</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+                <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="/education.png" alt="Ministère de l'Éducation Nationale" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                </div>
+                <h3 style={{ margin: 0 }}>Mathematics Teacher</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)' }}>Ministère de l'Éducation Nationale</p>
+              <p style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>Taught at high school and middle school levels. Served as a jury member for the Baccalauréat Grand Oral.</p>
+            </div>
+          </div>
+          <div className="timeline-item left">
+            <div className="glass-card timeline-content">
+              <div className="timeline-date">2024</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+                <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="/engie.png" alt="Engie" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                </div>
+                <h3 style={{ margin: 0 }}>Research Engineer</h3>
+              </div>
+              <p style={{ color: 'var(--text-secondary)' }}>Engie</p>
+              <p style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>Research subject: <em style={{ color: 'var(--text-primary)' }}>Numerical treatment of thermal diffusion through solid thickness of a cryogenic tank.</em></p>
+            </div>
+          </div>
+          <div className="timeline-item right">
             <div className="glass-card timeline-content">
               <div className="timeline-date">2024</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
@@ -102,7 +149,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="timeline-item right">
+          <div className="timeline-item left">
             <div className="glass-card timeline-content">
               <div className="timeline-date">2022</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
@@ -208,7 +255,7 @@ function App() {
             </div>
             <div className="contact-info">
               <a href="https://www.linkedin.com/in/walid-l-11b09325a/" target="_blank" rel="noopener noreferrer" className="contact-item">
-                <Linkedin size={18} /> LinkedIn
+                <LinkedinIcon size={18} /> LinkedIn
               </a>
               <a href="mailto:walid.lks@gmail.com" className="contact-item">
                 <Mail size={18} /> walid.lks@gmail.com
