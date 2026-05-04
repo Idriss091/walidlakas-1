@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool } from 'lucide-react';
+import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 // Page Components Placeholder
@@ -46,6 +46,36 @@ const Home = () => {
               alt="Walid LAKAS" 
               className="profile-img"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="section" style={{ background: 'rgba(14, 165, 233, 0.02)' }}>
+      <div className="container">
+        <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <span className="gradient-text">Academic</span> Background
+        </h2>
+        <div className="timeline">
+          <div className="timeline-item left">
+            <div className="glass-card timeline-content">
+              <div className="timeline-date">2024</div>
+              <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                <GraduationCap size={24} color="var(--accent-primary)" />
+                Research Master's in Fluid Mechanics
+              </h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Arts et Métiers</p>
+            </div>
+          </div>
+          <div className="timeline-item right">
+            <div className="glass-card timeline-content">
+              <div className="timeline-date">2022</div>
+              <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                <GraduationCap size={24} color="var(--accent-primary)" />
+                Bachelor's in Applied Mathematics
+              </h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Applied Mathematics</p>
+            </div>
           </div>
         </div>
       </div>
