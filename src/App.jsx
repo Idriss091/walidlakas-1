@@ -66,7 +66,7 @@ const Home = () => {
                 </div>
                 <h3 style={{ margin: 0 }}>Research Master's in Fluid Mechanics</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>Arts et Métiers</p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>Arts et Métiers, Paris</p>
               <a
                 href="https://attestation.artsetmetiers.fr/check/4F3C5BD7C74CAE8647C404A13841D2D87CC8CBE44F4E9639AC4758F3BAEEFCF3ZnB3elVSMTJuTWtnYjNiUnBvK0JWOVZXR0F5cEwyRENFM3lWUXRWZzBDN3dDamFO"
                 target="_blank"
