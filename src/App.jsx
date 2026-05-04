@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap } from 'lucide-react';
+import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap, Linkedin } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import LiquidEther from '@/components/LiquidEther';
 
@@ -37,6 +37,9 @@ const Home = () => {
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a href="mailto:walid.lks@gmail.com" className="btn btn-primary">
               <Mail size={20} /> Get in touch
+            </a>
+            <a href="https://www.linkedin.com/in/walid-l-11b09325a/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <Linkedin size={20} /> LinkedIn
             </a>
             <Link to="/blog" className="btn btn-secondary">
               Read my blog
@@ -204,6 +207,9 @@ function App() {
               <p style={{ color: 'var(--text-secondary)' }}>Research Engineer in Fluid Mechanics & Energy</p>
             </div>
             <div className="contact-info">
+              <a href="https://www.linkedin.com/in/walid-l-11b09325a/" target="_blank" rel="noopener noreferrer" className="contact-item">
+                <Linkedin size={18} /> LinkedIn
+              </a>
               <a href="mailto:walid.lks@gmail.com" className="contact-item">
                 <Mail size={18} /> walid.lks@gmail.com
               </a>
