@@ -114,8 +114,8 @@ function App() {
             <li><Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
             <li><Link to="/biomechanics" className={`nav-link ${location.pathname === '/biomechanics' ? 'active' : ''}`}>Biomechanics</Link></li>
             <li><Link to="/mathematics" className={`nav-link ${location.pathname === '/mathematics' ? 'active' : ''}`}>Mathematics</Link></li>
-            <li><Link to="/structural-theory" className={`nav-link ${location.pathname === '/structural-theory' ? 'active' : ''}`}>Structures</Link></li>
-            <li><Link to="/analytical-mechanics" className={`nav-link ${location.pathname === '/analytical-mechanics' ? 'active' : ''}`}>Analytics</Link></li>
+            <li><Link to="/structural-theory" className={`nav-link ${location.pathname === '/structural-theory' ? 'active' : ''}`}>Structural Theory</Link></li>
+            <li><Link to="/analytical-mechanics" className={`nav-link ${location.pathname === '/analytical-mechanics' ? 'active' : ''}`}>Analytical Mechanics</Link></li>
             <li><Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`}>Blog</Link></li>
           </ul>
         </div>
