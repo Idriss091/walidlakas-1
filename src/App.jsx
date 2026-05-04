@@ -62,7 +62,7 @@ const Home = () => {
               <div className="timeline-date">2024</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
                 <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Logo_Arts_et_M%C3%A9tiers.svg/200px-Logo_Arts_et_M%C3%A9tiers.svg.png" alt="Arts et Métiers" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                  <img src="/ensam.png" alt="Arts et Métiers" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Research Master's in Fluid Mechanics</h3>
               </div>
@@ -74,7 +74,7 @@ const Home = () => {
               <div className="timeline-date">2022</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
                 <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Logo_Universit%C3%A9_Paris-Saclay.svg/200px-Logo_Universit%C3%A9_Paris-Saclay.svg.png" alt="Université Paris-Saclay" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                  <img src="/evry.png" alt="Université d'Évry Paris-Saclay" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Bachelor's in Applied Mathematics</h3>
               </div>
