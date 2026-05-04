@@ -60,20 +60,24 @@ const Home = () => {
           <div className="timeline-item left">
             <div className="glass-card timeline-content">
               <div className="timeline-date">2024</div>
-              <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                <GraduationCap size={24} color="var(--accent-primary)" />
-                Research Master's in Fluid Mechanics
-              </h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+                <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Logo_Arts_et_M%C3%A9tiers.svg/200px-Logo_Arts_et_M%C3%A9tiers.svg.png" alt="Arts et Métiers" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                </div>
+                <h3 style={{ margin: 0 }}>Research Master's in Fluid Mechanics</h3>
+              </div>
               <p style={{ color: 'var(--text-secondary)' }}>Arts et Métiers</p>
             </div>
           </div>
           <div className="timeline-item right">
             <div className="glass-card timeline-content">
               <div className="timeline-date">2022</div>
-              <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                <GraduationCap size={24} color="var(--accent-primary)" />
-                Bachelor's in Applied Mathematics
-              </h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+                <div style={{ width: '48px', height: '48px', backgroundColor: '#fff', borderRadius: '8px', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Logo_Universit%C3%A9_Paris-Saclay.svg/200px-Logo_Universit%C3%A9_Paris-Saclay.svg.png" alt="Université Paris-Saclay" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                </div>
+                <h3 style={{ margin: 0 }}>Bachelor's in Applied Mathematics</h3>
+              </div>
               <p style={{ color: 'var(--text-secondary)' }}>Université d'Évry Paris-Saclay</p>
             </div>
           </div>
