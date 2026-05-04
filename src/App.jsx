@@ -76,7 +76,7 @@ const Home = () => {
             <div className="glass-card timeline-content">
               <div className="timeline-date">2025</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '10px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ width: '64px', height: '64px', borderRadius: '12px', overflow: 'hidden', flexShrink: 0, boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
                   <img src="/pepro.jpg" alt="Pepro" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Founder & Researcher</h3>
@@ -89,7 +89,7 @@ const Home = () => {
             <div className="glass-card timeline-content">
               <div className="timeline-date">2025</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-                <div style={{ width: '56px', height: '56px', backgroundColor: '#fff', borderRadius: '10px', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ width: '64px', height: '64px', backgroundColor: '#ffffff', borderRadius: '12px', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
                   <img src="/education.png" alt="Ministère de l'Éducation Nationale" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Mathematics Teacher</h3>
@@ -102,7 +102,7 @@ const Home = () => {
             <div className="glass-card timeline-content">
               <div className="timeline-date">2024</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-                <div style={{ width: '56px', height: '56px', backgroundColor: '#f0f0f0', borderRadius: '10px', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ width: '64px', height: '64px', backgroundColor: '#e8e8e8', borderRadius: '12px', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
                   <img src="/engie.png" alt="Engie" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Research Engineer</h3>
@@ -115,7 +115,7 @@ const Home = () => {
             <div className="glass-card timeline-content">
               <div className="timeline-date">2024</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-                <div style={{ width: '56px', height: '56px', backgroundColor: '#fff', borderRadius: '10px', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ width: '64px', height: '64px', backgroundColor: '#ffffff', borderRadius: '12px', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
                   <img src="/ensam.png" alt="Arts et Métiers" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Research Master's in Fluid Mechanics</h3>
@@ -153,7 +153,7 @@ const Home = () => {
             <div className="glass-card timeline-content">
               <div className="timeline-date">2022</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-                <div style={{ width: '56px', height: '56px', backgroundColor: '#fff', borderRadius: '10px', padding: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <div style={{ width: '64px', height: '64px', backgroundColor: '#ffffff', borderRadius: '12px', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
                   <img src="/evry.png" alt="Université d'Évry Paris-Saclay" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                 </div>
                 <h3 style={{ margin: 0 }}>Bachelor's in Applied Mathematics</h3>
