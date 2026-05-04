@@ -66,7 +66,33 @@ const Home = () => {
                 </div>
                 <h3 style={{ margin: 0 }}>Research Master's in Fluid Mechanics</h3>
               </div>
-              <p style={{ color: 'var(--text-secondary)' }}>Arts et Métiers</p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>Arts et Métiers</p>
+              <a
+                href="https://attestation.artsetmetiers.fr/check/4F3C5BD7C74CAE8647C404A13841D2D87CC8CBE44F4E9639AC4758F3BAEEFCF3ZnB3elVSMTJuTWtnYjNiUnBvK0JWOVZXR0F5cEwyRENFM3lWUXRWZzBDN3dDamFO"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  fontSize: '0.8rem',
+                  fontWeight: '600',
+                  color: '#10b981',
+                  border: '1px solid rgba(16, 185, 129, 0.3)',
+                  borderRadius: '20px',
+                  padding: '0.3rem 0.8rem',
+                  background: 'rgba(16, 185, 129, 0.08)',
+                  transition: 'all 0.2s ease',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(16, 185, 129, 0.18)'; e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.6)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(16, 185, 129, 0.08)'; e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.3)'; }}
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Blockchain Verified Diploma
+              </a>
             </div>
           </div>
           <div className="timeline-item right">
