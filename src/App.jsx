@@ -74,7 +74,7 @@ const Home = () => {
                 <GraduationCap size={24} color="var(--accent-primary)" />
                 Bachelor's in Applied Mathematics
               </h3>
-              <p style={{ color: 'var(--text-secondary)' }}>Applied Mathematics</p>
+              <p style={{ color: 'var(--text-secondary)' }}>Université d'Évry Paris-Saclay</p>
             </div>
           </div>
         </div>
