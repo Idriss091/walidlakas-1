@@ -2,6 +2,7 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap, Layers, Box, Wrench } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import LiquidEther from '@/components/LiquidEther';
+import BasicsMMCPage from '@/pages/BasicsMMCPage';
 
 const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -272,7 +273,7 @@ function App() {
           <Route path="/mathematics" element={<PageTemplate title="Mathematics" icon={FunctionSquare} />} />
           <Route path="/mechanics" element={<MechanicsPage />} />
           <Route path="/mechanics/structural-theory" element={<PageTemplate title="Theory of Structures" icon={Building2} />} />
-          <Route path="/mechanics/basics-of-continuum-mechanics" element={<PageTemplate title="Basics of Continuum Mechanics" icon={Layers} />} />
+          <Route path="/mechanics/basics-of-continuum-mechanics" element={<BasicsMMCPage />} />
           <Route path="/mechanics/continuum-mechanics" element={<PageTemplate title="Continuum Mechanics (MMC)" icon={Box} />} />
           <Route path="/mechanics/analytical-mechanics" element={<PageTemplate title="Analytical Mechanics" icon={Atom} />} />
           <Route path="/blog" element={<PageTemplate title="Research Blog" icon={PenTool} />} />
