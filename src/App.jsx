@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap } from 'lucide-react';
+import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap, Layers, Box, Wrench } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import LiquidEther from '@/components/LiquidEther';
 
@@ -23,6 +23,43 @@ const PageTemplate = ({ title, icon: Icon }) => (
         <Icon size={64} />
         <h2>Content coming soon</h2>
         <p>This section is currently being updated with recent research and publications.</p>
+      </div>
+    </div>
+  </div>
+);
+
+const MechanicsPage = () => (
+  <div className="page-header">
+    <div className="container">
+      <h1 className="gradient-text">Mechanics</h1>
+      <p className="hero-subtitle" style={{marginBottom: 0}}>Core mechanics disciplines and theories</p>
+    </div>
+    <div className="container page-content" style={{marginTop: '4rem'}}>
+      <div className="grid-cards">
+        <div className="glass-card research-card">
+          <div className="card-icon"><Building2 size={24} /></div>
+          <h3>Theory of Structures</h3>
+          <p>Analyzing the behavior of solid structures under various dynamic and thermal loads.</p>
+          <Link to="/mechanics/structural-theory" className="read-more">Explore <ArrowRight size={16}/></Link>
+        </div>
+        <div className="glass-card research-card">
+          <div className="card-icon"><Layers size={24} /></div>
+          <h3>Basics of Continuum Mechanics</h3>
+          <p>Fundamental principles, stress, strain, and kinematics of continuous media.</p>
+          <Link to="/mechanics/basics-of-continuum-mechanics" className="read-more">Explore <ArrowRight size={16}/></Link>
+        </div>
+        <div className="glass-card research-card">
+          <div className="card-icon"><Box size={24} /></div>
+          <h3>Continuum Mechanics (MMC)</h3>
+          <p>Advanced concepts and constitutive equations in continuum mechanics.</p>
+          <Link to="/mechanics/continuum-mechanics" className="read-more">Explore <ArrowRight size={16}/></Link>
+        </div>
+        <div className="glass-card research-card">
+          <div className="card-icon"><Atom size={24} /></div>
+          <h3>Analytical Mechanics</h3>
+          <p>Applying fundamental principles using Lagrangian and Hamiltonian formalisms.</p>
+          <Link to="/mechanics/analytical-mechanics" className="read-more">Explore <ArrowRight size={16}/></Link>
+        </div>
       </div>
     </div>
   </div>
@@ -182,16 +219,10 @@ const Home = () => {
             <Link to="/mathematics" className="read-more">Explore research <ArrowRight size={16}/></Link>
           </div>
           <div className="glass-card research-card">
-            <div className="card-icon"><Building2 size={24} /></div>
-            <h3>Structural Theory</h3>
-            <p>Analyzing the behavior of solid structures under various dynamic and thermal loads for safer and more efficient designs.</p>
-            <Link to="/structural-theory" className="read-more">Explore research <ArrowRight size={16}/></Link>
-          </div>
-          <div className="glass-card research-card">
-            <div className="card-icon"><Atom size={24} /></div>
-            <h3>Analytical Mechanics</h3>
-            <p>Applying fundamental principles of mechanics to understand complex systems, using Lagrangian and Hamiltonian formalisms.</p>
-            <Link to="/analytical-mechanics" className="read-more">Explore research <ArrowRight size={16}/></Link>
+            <div className="card-icon"><Wrench size={24} /></div>
+            <h3>Mechanics</h3>
+            <p>Exploring Theory of Structures, Continuum Mechanics (MMC), and Analytical Mechanics.</p>
+            <Link to="/mechanics" className="read-more">Explore research <ArrowRight size={16}/></Link>
           </div>
         </div>
       </div>
@@ -228,8 +259,7 @@ function App() {
             <li><Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
             <li><Link to="/biomechanics" className={`nav-link ${location.pathname === '/biomechanics' ? 'active' : ''}`}>Biomechanics</Link></li>
             <li><Link to="/mathematics" className={`nav-link ${location.pathname === '/mathematics' ? 'active' : ''}`}>Mathematics</Link></li>
-            <li><Link to="/structural-theory" className={`nav-link ${location.pathname === '/structural-theory' ? 'active' : ''}`}>Structural Theory</Link></li>
-            <li><Link to="/analytical-mechanics" className={`nav-link ${location.pathname === '/analytical-mechanics' ? 'active' : ''}`}>Analytical Mechanics</Link></li>
+            <li><Link to="/mechanics" className={`nav-link ${location.pathname.startsWith('/mechanics') ? 'active' : ''}`}>Mechanics</Link></li>
             <li><Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`}>Blog</Link></li>
           </ul>
         </div>
@@ -240,8 +270,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/biomechanics" element={<PageTemplate title="Biomechanics" icon={Droplets} />} />
           <Route path="/mathematics" element={<PageTemplate title="Mathematics" icon={FunctionSquare} />} />
-          <Route path="/structural-theory" element={<PageTemplate title="Structural Theory" icon={Building2} />} />
-          <Route path="/analytical-mechanics" element={<PageTemplate title="Analytical Mechanics" icon={Atom} />} />
+          <Route path="/mechanics" element={<MechanicsPage />} />
+          <Route path="/mechanics/structural-theory" element={<PageTemplate title="Theory of Structures" icon={Building2} />} />
+          <Route path="/mechanics/basics-of-continuum-mechanics" element={<PageTemplate title="Basics of Continuum Mechanics" icon={Layers} />} />
+          <Route path="/mechanics/continuum-mechanics" element={<PageTemplate title="Continuum Mechanics (MMC)" icon={Box} />} />
+          <Route path="/mechanics/analytical-mechanics" element={<PageTemplate title="Analytical Mechanics" icon={Atom} />} />
           <Route path="/blog" element={<PageTemplate title="Research Blog" icon={PenTool} />} />
         </Routes>
       </main>
