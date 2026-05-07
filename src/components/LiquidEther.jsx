@@ -1054,7 +1054,8 @@ export default function LiquidEther({
         if (isVisible && !document.hidden) {
           webglRef.current.start();
         } else {
-          webglRef.current.pause();
+          // Disable pause on scroll to prevent white flash
+          // webglRef.current.pause();
         }
       },
       { threshold: [0, 0.01, 0.1] }
