@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import LiquidEther from '@/components/LiquidEther';
 import BasicsMMCPage from '@/pages/BasicsMMCPage';
 import AnalysisOfDeformationPage from '@/pages/AnalysisOfDeformationPage';
+import AnalyticalMechanicsPage from '@/pages/AnalyticalMechanicsPage';
+import VirtualWorkApplicationPage from '@/pages/VirtualWorkApplicationPage';
 
 const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -277,7 +279,8 @@ function App() {
           <Route path="/mechanics/basics-of-continuum-mechanics" element={<BasicsMMCPage />} />
           <Route path="/mechanics/basics-of-continuum-mechanics/analysis-of-deformation" element={<AnalysisOfDeformationPage />} />
           <Route path="/mechanics/continuum-mechanics" element={<PageTemplate title="Continuum Mechanics (MMC)" icon={Box} />} />
-          <Route path="/mechanics/analytical-mechanics" element={<PageTemplate title="Analytical Mechanics" icon={Atom} />} />
+          <Route path="/mechanics/analytical-mechanics" element={<AnalyticalMechanicsPage />} />
+          <Route path="/mechanics/analytical-mechanics/virtual-work-application" element={<VirtualWorkApplicationPage />} />
           <Route path="/blog" element={<PageTemplate title="Research Blog" icon={PenTool} />} />
         </Routes>
       </main>
