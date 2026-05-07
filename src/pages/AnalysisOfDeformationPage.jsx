@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers } from 'lucide-react';
+import { Layers, Dna } from 'lucide-react';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 
@@ -242,6 +242,51 @@ const AnalysisOfDeformationPage = () => {
 
           </div>
         </div>
+
+        {/* Biomechanical Insight Section */}
+        <div className="glass-panel" style={{ padding: '3rem', marginTop: '3rem', display: 'flex', flexDirection: 'column', gap: '2rem', borderTop: '4px solid var(--primary-color)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <Dna size={32} color="var(--primary-color)" />
+            <h2 style={{ color: 'var(--text-primary)', margin: 0 }}>Biomechanical Application: Muscle Contraction</h2>
+          </div>
+          
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem', alignItems: 'center' }}>
+            <div style={{ flex: '1 1 400px' }}>
+              <p style={{ marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
+                This exercise is not just a theoretical math problem—it perfectly models the <strong>contraction of a skeletal muscle</strong>! Biological soft tissues are often modeled geometrically as cylinders.
+              </p>
+              
+              <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--primary-color)', marginTop: '8px', flexShrink: 0 }}></div>
+                  <div>
+                    <strong style={{ color: 'var(--text-primary)' }}>The Kinematics (No Shear):</strong> In Question (l), we proved there is no angle variation. This "pure stretch" models how muscle fibers contract uniformly along their primary axis without twisting.
+                  </div>
+                </li>
+                <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--primary-color)', marginTop: '8px', flexShrink: 0 }}></div>
+                  <div>
+                    <strong style={{ color: 'var(--text-primary)' }}>The Cylinder (Question e):</strong> When a muscle (a cylinder) contracts, it shortens longitudinally (<InlineMath math="\alpha < 1" />) and bulges radially (<InlineMath math="\beta > 1" />), transforming into an elliptical cylinder or a thicker cylinder.
+                  </div>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--primary-color)', marginTop: '8px', flexShrink: 0 }}></div>
+                  <div>
+                    <strong style={{ color: 'var(--text-primary)' }}>Incompressibility (Question j):</strong> Human tissues are ~70% water, making them mathematically <strong>incompressible</strong>. This means the volume variation is strictly zero (<InlineMath math="\delta v = 0" />). Using your result <InlineMath math="\alpha\beta - 1 = 0" />, we find <InlineMath math="\beta = 1/\alpha" />. This simple relation defines the exact radial expansion of a muscle given its longitudinal contraction!
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}>
+              <div style={{ position: 'relative', width: '100%', maxWidth: '400px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(135deg, rgba(14,165,233,0.2) 0%, transparent 100%)', pointerEvents: 'none' }}></div>
+                <img src="/biomechanics-muscle.png" alt="Biomechanics of muscle contraction modeled as cylinder deformation" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );
