@@ -26,6 +26,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-color);
@@ -106,6 +110,9 @@ a:hover {
   width: 100%;
   z-index: 1000;
   padding: 1.5rem 0;
+  background: rgba(5, 8, 20, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
   transition: var(--transition-smooth);
 }
 
@@ -113,6 +120,7 @@ a:hover {
   padding: 1rem 0;
   background: rgba(5, 8, 20, 0.8);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--surface-border);
 }
 
