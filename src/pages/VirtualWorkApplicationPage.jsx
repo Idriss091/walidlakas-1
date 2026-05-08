@@ -1,5 +1,4 @@
-import React from 'react';
-import { Atom, Compass, Activity, Dna } from 'lucide-react';
+import { Atom, Compass, Dna } from 'lucide-react';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 

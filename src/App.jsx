@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, GraduationCap, Layers, Box, Wrench } from 'lucide-react';
+import { Mail, ArrowRight, Droplets, FunctionSquare, Building2, Atom, PenTool, Layers, Box, Wrench } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import LiquidEther from '@/components/LiquidEther';
 import BasicsMMCPage from '@/pages/BasicsMMCPage';
