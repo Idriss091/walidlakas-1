@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layers, Dna } from 'lucide-react';
-import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 
 const AnalysisOfDeformationPage = () => {
