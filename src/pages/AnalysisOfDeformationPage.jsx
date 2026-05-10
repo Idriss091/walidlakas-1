@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Layers, Dna } from 'lucide-react';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
@@ -90,7 +90,7 @@ const AnalysisOfDeformationPage = () => {
                 <strong style={{ color: 'var(--text-primary)' }}>Answer:</strong>
               </div>
               <BlockMath math={String.raw`\vec{u} = p - P = f(P) - P = \begin{pmatrix} \alpha X_1 \\ \beta X_2 \\ X_3 \end{pmatrix} - \begin{pmatrix} X_1 \\ X_2 \\ X_3 \end{pmatrix} =`} />
-              <BlockMath math={String.raw`= X_1(\alpha - 1)\vec{e_1} + X_2(\beta - 1)\vec{e_2} \qquad (u_3 = 0 \ \forall P \in \Omega)`} />
+              <BlockMath math={String.raw`= X_1(\alpha - 1)\vec{e_1} + X_2(\beta - 1)\vec{e_2} \qquad (u_3 = 0 \\ \forall P \in \Omega)`} />
             </div>
 
             <div style={{ marginTop: '3rem' }}>
@@ -131,7 +131,7 @@ const AnalysisOfDeformationPage = () => {
               <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                 Let's take a vector <InlineMath math={String.raw`\vec{e} = \begin{pmatrix} a \\ b \\ c \end{pmatrix}`} />. Applying the formula:
               </p>
-              <BlockMath math={String.raw`\delta l(\vec{e}) = \frac{|\alpha F \vec{e}| - |\alpha \vec{e}|}{|\alpha \vec{e}|} \qquad (\text{with } \alpha \vec{e} = dX, \ \alpha \to 0^+)`} />
+              <BlockMath math={String.raw`\delta l(\vec{e}) = \frac{|\alpha F \vec{e}| - |\alpha \vec{e}|}{|\alpha \vec{e}|} \qquad (\text{with } \alpha \vec{e} = dX, \\ \alpha \to 0^+)`} />
               <BlockMath math={String.raw`= \frac{\alpha |F \vec{e}| - \alpha |\vec{e}|}{\alpha |\vec{e}|} = |F \vec{e}| - 1`} />
               <p style={{ marginTop: '2rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                 Evaluating <InlineMath math={String.raw`F \vec{e}`} />:
