@@ -238,7 +238,7 @@ const VirtualWorkApplicationPage = () => {
             </p>
 
             <div style={{ overflowX: 'auto', padding: '1rem 0' }}>
-              <BlockMath math={String.raw`\delta\mathcal{L}^a = \underbrace{-\mu\theta\delta\theta}_{\substack{\text{Virtual work of} \\ \text{the torsional spring}}} - \underbrace{mg\vec{e_y} \cdot \delta P}_{\text{Virtual work of the weight}}`} />
+              <BlockMath math={String.raw`\delta\mathcal{L}^a = \underbrace{-\mu\theta\delta\theta}_{\substack{\text{Virtual work of} \\ \text{the torsional spring}}} - \underbrace{mg\vec{e}_y \cdot \delta P}_{\text{Virtual work of the weight}}`} />
             </div>
 
             <p style={{ marginBottom: '1rem', fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>

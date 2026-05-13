@@ -38,7 +38,7 @@ const AnalysisOfDeformationPage = () => {
             <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
               Consider the transformation defined by:
             </p>
-            <BlockMath math={String.raw`f(P) = \alpha X_1 \vec{e_1} + \beta X_2 \vec{e_2} + X_3 \vec{e_3} \quad (E)`} />
+            <BlockMath math={String.raw`f(P) = \alpha X_1 \vec{e}_1 + \beta X_2 \vec{e}_2 + X_3 \vec{e}_3 \quad (E)`} />
             <p style={{ marginTop: '1rem', marginBottom: '2rem', color: 'var(--text-secondary)' }}>
               where <InlineMath math={String.raw`\alpha`} /> and <InlineMath math={String.raw`\beta`} /> are constants.
             </p>
@@ -89,7 +89,7 @@ const AnalysisOfDeformationPage = () => {
                 <strong style={{ color: 'var(--text-primary)' }}>Answer:</strong>
               </div>
               <BlockMath math={String.raw`\vec{u} = p - P = f(P) - P = \begin{pmatrix} \alpha X_1 \\ \beta X_2 \\ X_3 \end{pmatrix} - \begin{pmatrix} X_1 \\ X_2 \\ X_3 \end{pmatrix} =`} />
-              <BlockMath math={String.raw`= X_1(\alpha - 1)\vec{e_1} + X_2(\beta - 1)\vec{e_2} \qquad (u_3 = 0 \\ \forall P \in \Omega)`} />
+              <BlockMath math={String.raw`= X_1(\alpha - 1)\vec{e}_1 + X_2(\beta - 1)\vec{e}_2 \qquad (u_3 = 0 \\ \forall P \in \Omega)`} />
             </div>
 
             <div style={{ marginTop: '3rem' }}>
@@ -204,22 +204,22 @@ const AnalysisOfDeformationPage = () => {
             </div>
 
             <div style={{ marginTop: '3rem' }}>
-              <h4 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>l) Calculate the angle variation between the basis vectors <InlineMath math={String.raw`\{\vec{e_1}, \vec{e_2}, \vec{e_3}\}`} />.</h4>
+              <h4 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>l) Calculate the angle variation between the basis vectors <InlineMath math={String.raw`\{\vec{e}_1, \vec{e}_2, \vec{e}_3\}`} />.</h4>
               <div style={{ marginBottom: '1rem' }}>
                 <strong style={{ color: 'var(--text-primary)' }}>Answer:</strong>
               </div>
               <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                 <em>Explanation: We are looking for shear deformation by analyzing how originally orthogonal unit vectors behave after transformation.</em>
               </p>
-              <BlockMath math={String.raw`\delta \theta(\vec{e_i}, \vec{e_j}) = \underbrace{\arccos(\vec{e_i} \cdot \vec{e_j})}_{= \pi / 2} - \arccos\left( \frac{F\vec{e_i} \cdot F\vec{e_j}}{\lambda(\vec{e_i})\lambda(\vec{e_j})} \right)`} />
+              <BlockMath math={String.raw`\delta \theta(\vec{e}_i, \vec{e}_j) = \underbrace{\arccos(\vec{e}_i \cdot \vec{e}_j)}_{= \pi / 2} - \arccos\left( \frac{F\vec{e}_i \cdot F\vec{e}_j}{\lambda(\vec{e}_i)\lambda(\vec{e}_j)} \right)`} />
               <p style={{ marginTop: '1rem', marginBottom: '2rem', color: 'var(--text-secondary)' }}>
                 This is because the chosen vectors are orthogonal basis vectors.
               </p>
 
               <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
-                Let's compute the dot product <InlineMath math={String.raw`F\vec{e_i} \cdot F\vec{e_j}`} /> :
+                Let's compute the dot product <InlineMath math={String.raw`F\vec{e}_i \cdot F\vec{e}_j`} /> :
               </p>
-              <BlockMath math={String.raw`F\vec{e_i} \cdot F\vec{e_j} = \vec{e_i} \cdot F^T F \vec{e_j} = \vec{e_i} \cdot F^2 \vec{e_j}`} />
+              <BlockMath math={String.raw`F\vec{e}_i \cdot F\vec{e}_j = \vec{e}_i \cdot F^T F \vec{e}_j = \vec{e}_i \cdot F^2 \vec{e}_j`} />
               <p style={{ marginTop: '1rem', marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
                 <em>Note: We use standard tensor algebra properties. In our specific case, <InlineMath math={String.raw`F^T F = F^2`} /> is true because <InlineMath math={String.raw`F`} /> is symmetric.</em>
               </p>
@@ -230,12 +230,12 @@ const AnalysisOfDeformationPage = () => {
               <p style={{ marginTop: '1rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
                 Applying this to all basis vectors:
               </p>
-              <BlockMath math={String.raw`\vec{e_1} \cdot F^2 \vec{e_2} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \cdot \begin{bmatrix} \alpha^2 & 0 & 0 \\ 0 & \beta^2 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \cdot \begin{pmatrix} 0 \\ \beta^2 \\ 0 \end{pmatrix} = 0`} />
-              <BlockMath math={String.raw`\vec{e_1} \cdot F^2 \vec{e_3} = 0`} />
-              <BlockMath math={String.raw`\vec{e_2} \cdot F^2 \vec{e_3} = 0`} />
+              <BlockMath math={String.raw`\vec{e}_1 \cdot F^2 \vec{e}_2 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \cdot \begin{bmatrix} \alpha^2 & 0 & 0 \\ 0 & \beta^2 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \cdot \begin{pmatrix} 0 \\ \beta^2 \\ 0 \end{pmatrix} = 0`} />
+              <BlockMath math={String.raw`\vec{e}_1 \cdot F^2 \vec{e}_3 = 0`} />
+              <BlockMath math={String.raw`\vec{e}_2 \cdot F^2 \vec{e}_3 = 0`} />
               
               <p style={{ marginTop: '2rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
-                Therefore: <InlineMath math={String.raw`\delta \theta(\vec{e_i}, \vec{e_j}) = 0 \implies`} /> <strong>There is no angle variation (no shear).</strong>
+                Therefore: <InlineMath math={String.raw`\delta \theta(\vec{e}_i, \vec{e}_j) = 0 \implies`} /> <strong>There is no angle variation (no shear).</strong>
               </p>
             </div>
 
