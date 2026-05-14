@@ -1,6 +1,18 @@
 import React from 'react';
 import { Atom, Compass, Activity, Dna } from 'lucide-react';
-import { InlineMath, BlockMath } from 'react-katex';
+import { InlineMath as ReactKatexInlineMath, BlockMath as ReactKatexBlockMath } from 'react-katex';
+
+const InlineMath = ({ math, children, ...props }) => (
+  <span className="notranslate" translate="no">
+    <ReactKatexInlineMath math={math} {...props}>{children}</ReactKatexInlineMath>
+  </span>
+);
+
+const BlockMath = ({ math, children, ...props }) => (
+  <div className="notranslate" translate="no">
+    <ReactKatexBlockMath math={math} {...props}>{children}</ReactKatexBlockMath>
+  </div>
+);
 
 const VirtualWorkApplicationPage = () => {
   return (
